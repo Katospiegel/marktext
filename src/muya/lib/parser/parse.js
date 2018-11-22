@@ -2,11 +2,13 @@ import { beginRules, inlineRules } from './rules'
 import { isLengthEven, union } from '../utils'
 import { punctuation } from '../config'
 
-const CAN_NEST_RULES = ['strong', 'em', 'link', 'del', 'image', 'a_link'] // image can not nest but it has children
+const CAN_NEST_RULES = ['mark','strong', 'em', 'link', 'del', 'image', 'a_link'] // image can not nest but it has children
 
 const validateRules = Object.assign({}, inlineRules)
 delete validateRules.em
 delete validateRules.strong
+// KS I added this line
+delete validateRules.mark
 delete validateRules['tail_header']
 delete validateRules['backlash']
 

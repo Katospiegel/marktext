@@ -142,23 +142,27 @@ export const DAED_REMOVE_SELECTOR = new Set([
 
 export const CURSOR_DNA = getLongUniqueId()
 
+// KS I added here mark
 export const DEFAULT_TURNDOWN_CONFIG = {
   headingStyle: 'atx', // setext or atx
   bulletListMarker: '-', // -, +, or *
   codeBlockStyle: 'fenced', // fenced or indented
   fence: '```', // ``` or ~~~
   emDelimiter: '*', // _ or *
-  strongDelimiter: '**' // ** or __
+  strongDelimiter: '**', // ** or __
+  markDelimiter: '=='
+
 }
 
 export const FORMAT_MARKER_MAP = {
   'em': '*',
   'inline_code': '`',
   'strong': '**',
-  'del': '~~'
+  'del': '~~',
+  'mark': '=='
 }
 
-export const FORMAT_TYPES = ['strong', 'em', 'del', 'inline_code', 'link', 'image']
+export const FORMAT_TYPES = ['mark','strong', 'em', 'del', 'inline_code', 'link', 'image']
 
 export const punctuation = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~']
 

@@ -91,6 +91,7 @@ Here is an example:
 | `formatHyperlink`   | Insert a hyperlink                          |
 | `formatImage`       | Insert a image                              |
 | `formatClearFormat` | Clear the formatting of the selected text   |
+| `formatStrong`      | Set the font of the selected text to mark   |
 
 **Window menu:**
 
@@ -112,4 +113,3 @@ Here is an example:
 | `viewToggleTabBar`            | Toggle tabbar                            |
 | `viewDevToggleDeveloperTools` | Toggle developer tools (debug mode only) |
 | `viewDevReload`               | Reload window (debug mode only)          |
-

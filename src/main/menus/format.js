@@ -1,10 +1,19 @@
 import * as actions from '../actions/format'
 import keybindings from '../shortcutHandler'
 
+// Here I include the mark item in the menu
+
 export default {
   id: 'formatMenuItem',
   label: 'Format',
   submenu: [{
+    id: 'MarkMenuItem',
+    label: 'Mark',
+    type: 'checkbox',
+    accelerator: keybindings.getAccelerator('formatMark'),
+    click (menuItem, browserWindow) {
+      actions.format(browserWindow, 'mark')
+  }, {
     id: 'strongMenuItem',
     label: 'Strong',
     type: 'checkbox',

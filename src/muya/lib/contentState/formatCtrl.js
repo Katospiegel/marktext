@@ -6,6 +6,8 @@ const getOffset = (offset, { range: { start, end }, type, anchor, alt }) => {
   const dis = offset - start
   const len = end - start
   switch (type) {
+// I just added this line
+    case 'mark':
     case 'strong':
     case 'del':
     case 'em':

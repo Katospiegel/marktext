@@ -70,6 +70,7 @@ class Keybindings {
       ['paragraphYAMLFrontMatter', 'CmdOrCtrl+Alt+Y'],
 
       // format menu
+	  ['formatMark','CmdOrCtrl+E']
       ['formatStrong', 'CmdOrCtrl+B'],
       ['formatEmphasis', 'CmdOrCtrl+I'],
       ['formatInlineCode', 'CmdOrCtrl+`'],

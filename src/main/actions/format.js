@@ -2,6 +2,8 @@ import { ipcMain } from 'electron'
 import { getMenuItemById } from '../utils'
 
 const MENU_ID_FORMAT_MAP = {
+  // KS I added this here. I guess this is to aplied some format
+  'markMenuItem' : 'mark';
   'strongMenuItem': 'strong',
   'emphasisMenuItem': 'em',
   'inlineCodeMenuItem': 'inline_code',

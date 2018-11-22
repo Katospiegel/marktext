@@ -153,6 +153,11 @@ Renderer.prototype.strong = function (text) {
   return '<strong>' + text + '</strong>'
 }
 
+// I created this function for marking
+Renderer.prototype.mark = function (text) {
+  return '<mark>' + text + '</mark>'
+}
+
 Renderer.prototype.em = function (text) {
   return '<em>' + text + '</em>'
 }

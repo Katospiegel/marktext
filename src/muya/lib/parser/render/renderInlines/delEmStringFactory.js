@@ -1,7 +1,7 @@
 import { CLASS_OR_ID } from '../../../config'
 import { snakeToCamel } from '../../../utils'
 
-// render factory of `del`,`em`,`strong`
+// render factory of `del`,`em`,`strong`, `mark`
 export default function delEmStrongFac (type, h, cursor, block, token, outerClass) {
   const className = this.getClassName(outerClass, block, token, cursor)
   const COMMON_MARKER = `span.${className}.${CLASS_OR_ID['AG_REMOVE']}`

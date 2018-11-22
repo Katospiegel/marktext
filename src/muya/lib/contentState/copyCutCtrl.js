@@ -46,13 +46,14 @@ const copyCutCtrl = ContentState => {
 
     // replace inline rule element: code, a, strong, em, del to span element
     // in order to escape turndown translation
-
+    // KS I addded here this
     const inlineRuleElements = wrapper.querySelectorAll(
       `a.${CLASS_OR_ID['AG_INLINE_RULE']},
       code.${CLASS_OR_ID['AG_INLINE_RULE']},
       strong.${CLASS_OR_ID['AG_INLINE_RULE']},
       em.${CLASS_OR_ID['AG_INLINE_RULE']},
-      del.${CLASS_OR_ID['AG_INLINE_RULE']}`
+      del.${CLASS_OR_ID['AG_INLINE_RULE']},
+      mark.${CLASS_OR_ID['AG_INLINE_RULE']}`
     )
     ;[...inlineRuleElements].forEach(e => {
       const span = document.createElement('span')

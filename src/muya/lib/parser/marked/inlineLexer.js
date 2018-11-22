@@ -148,6 +148,14 @@ InlineLexer.prototype.output = function (src) {
       continue
     }
 
+	// KS Mark
+    cap = this.rules.mark.exec(src)
+    if (cap) {
+      src = src.substring(cap[0].length)
+      out += this.renderer.mark(this.output(cap[2] || cap[1]))
+      continue
+    }
+
     // em
     cap = this.rules.em.exec(src)
     if (cap) {
